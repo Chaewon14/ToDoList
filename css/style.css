@@ -1,0 +1,22 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 50%;
+    background-color: gray;
+    box-sizing: border-box;
+}
+#header{
+    background-color: pink;
+}
+
+#form-search-date{
+    padding: 1rem 0;
+}
+
+.item-todo{
+    background-color: mistyrose;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}

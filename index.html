@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Home</title>
 </head>
 <body>
-    시작!
+    <div id="container">
+        <div id="header">
+            <h1>My ToDoList</h1>
+        </div>
+        <nav></nav>
+    
+        <form id="form-search-date">   <!--날짜 검색-->
+            <labe for="date">날짜:
+                <input type="date" name="date">
+                <input type="submit">
+                <button>Today</button>
+            </labe>
+        </form>
+
+        <div>   <!--할일 등록, 리스트-->
+            <div>
+                <input type="text" id="input-todo">
+                <button id="button-addToDo">등록</button>
+            </div>
+            
+
+            <div id="container-todoList">
+                <div class="item-todo">할일내용1</div>
+                <div class="item-todo">할일내용2</div>
+                <div class="item-todo">할일내용3</div>
+                <div class="item-todo">할일내용4</div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </div>
+    
+    
 </body>
 </html>
