@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 1rem;
     width: 50%;
-    background-color: gray;
+    background-color: darkgray;
     box-sizing: border-box;
 }
 #header{
@@ -15,8 +15,48 @@
     padding: 1rem 0;
 }
 
-.item-todo{
-    background-color: mistyrose;
-    margin: 0.5rem 0;
+#input-todo{
+    width: 60%;
+}
+
+#container-todoList{
+    min-height: 10rem;
+}
+
+#todo-list{
+    /* background-color: beige; */
+    overflow: auto;  /*자식요소의 margin이 부모요소 밖으로 벗어나지 않음*/
+}
+
+#empty-message{   /*비어있을 때 문구*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    color: white;
+    background-color: gray;
+}
+
+.single-item-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palevioletred;
+    margin: 1rem 0;
     padding: 0.5rem;
+    border-radius: 1rem;
+
+    div{  /* 할일 텍스트*/
+        width: 100%;
+        padding: 0.5rem;
+        overflow-wrap: anywhere;
+    }
+
+    button{  /*할일 삭제 버튼*/
+        width: fit-content;
+        height: fit-content;
+        background-color: red;
+        color: white;
+        border: none;
+    }
 }
